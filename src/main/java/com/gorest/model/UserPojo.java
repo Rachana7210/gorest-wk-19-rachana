@@ -1,20 +1,10 @@
 package com.gorest.model;
 
 public class UserPojo {
-
-    private Integer id;
-    private String name;
+    private String  name;
     private String email;
     private String gender;
-    private  String status;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
+    private String status;
 
     public String getName() {
         return name;
@@ -47,8 +37,13 @@ public class UserPojo {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public static UserPojo getRequestBody(String name, String gender, String email, String status){
+        UserPojo userPojo = new UserPojo();
+        userPojo.setName(name);
+        userPojo.setGender(gender);
+        userPojo.setEmail(email);
+        userPojo.setStatus(status);
+        return userPojo;
+    }
 }
-
-
-
-

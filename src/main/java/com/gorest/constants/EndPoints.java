@@ -1,33 +1,16 @@
 package com.gorest.constants;
 
-/**
- * Created by Jay
- */
 public class EndPoints {
+    public static final String CREATE_USER = "/users";
+    public static final String GET_USER_BY_ID = "/users/{userID}";
+    public static final String UPDATE_USER_BY_ID = "/users/{userID}";
+    public static final String DELETE_USER_BY_ID = "/users/{userID}";
 
-    /**
-     * This is Endpoints of user api
-     */
-    public static final String GET_ALL_USERS = "/users";
+    //Posts
 
-    public static final String GET_SINGLE_USER_BY_ID = "/{id}";
-
-    public static final String UPDATE_USER_BY_ID="/{id}";
-
-    public static final String DELETE_USER_BY_ID = "/{id}";
-
-
-
-
-
-
-
-
-
-
-
-    /**
-     * This is Endpoints of Authentication api
-     */
-
+    public static final String GET_ALL_POST = "/posts";
+    public static final String GET_POST_BY_ID = "/posts/{postID}";
+    public static final String CREATE_POST = "users/{userId}/posts";
+    public static final String UPDATE_POST_BY_ID = "/posts/{postID}";
+    public static final String DELETE_POST_BY_ID = "/posts/{userID}";
 }

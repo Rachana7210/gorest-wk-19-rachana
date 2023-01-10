@@ -3,12 +3,8 @@ package com.gorest.utils;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-/**
- * Created by Jay
- */
 public class PropertyReader {
-
-    /*Rules fo implementing singleton design pattern
+     /*Rules fo implementing singleton design pattern
     1. Make the constructor private
     2. Create a static method to get the instance
     3. Create a static member variable*/
